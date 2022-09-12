@@ -1,0 +1,134 @@
+* , html{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    box-sizing: inherit;
+    padding: 0px;
+    background-color: $Verydarkblue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75vh 25vh;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.cont{
+    width: 100%;
+    height: 100%;
+    background-image:url("/images/bg-stars.svg") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 40vh;
+    justify-content: center;
+    align-items: center;
+    .title{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: $White;
+        font-size: 1.4em;
+        letter-spacing: 0.2em;
+        padding-top: 10vh;
+    }
+    .timer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+            .b1{
+                width: 8vw;
+                height: 8vw;
+                margin-left: 10px;
+                margin-right: 10px;
+                .second{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    box-shadow: 0px 0px 40px $Verydarkblue;
+                    .topSection{
+                        width: 100%;
+                        height: 50%;
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        background-color: $Darkdesaturatedblue;
+                        border-bottom: 1px $Verydarkblue solid;
+                    }
+                    .bottomSection{
+                        width: 100%;
+                        height: 50%;
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px ;
+                        background-color: $Darkdesaturatedblue;
+                    }
+                    .ball1{
+                        position: absolute;
+                        top: 48px;
+                        left: -5px;
+                        background-color: $Verydarkblue;
+                        width: 10px;
+                        height: 10px;
+                        border-radius:10px ;
+                    }
+                    .ball2{
+                        position: absolute;
+                        top: 48px;
+                        right: -5px;
+                        background-color: $Verydarkblue;
+                        width: 10px;
+                        height: 10px;
+                        border-radius:10px ;
+                    }
+                    .card{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 80px;
+                        font-weight: $weight;
+                        color: $Softred;
+                        text-align: center;
+                        opacity: 1;
+                    }
+                }
+                .sTitle{
+                    text-align: center;
+                    color: $Grayishblue;
+                    margin-top: 20px;
+                }
+            }
+
+    }
+}
+.footer{
+    width: 100vw;
+    height: 100%;
+    background-image:url("/images/pattern-hills.svg") ;
+   
+   .socIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    img{
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    img:hover{
+        color:$Softred;
+    }
+   }
+}
